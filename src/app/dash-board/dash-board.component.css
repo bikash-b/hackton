@@ -1,0 +1,379 @@
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-box-wrapper{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.chart-box-wrapper{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.card-box{
+    background-color: #323a46;
+    padding: 1.5rem;
+    -webkit-box-shadow: 0 0.75rem 6rem rgba(56,65,74,.03);
+    box-shadow: 0 0.75rem 6rem rgba(56,65,74,.03);
+    margin-bottom: 24px;
+    border-radius: .25rem;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    color: #FFFFFF;
+    margin: 0.5em;
+}
+
+.primary-color{
+    color: #FFFFFF;
+}
+
+.box-actions>span::before {
+    content: "\2807";
+}
+
+.badge>span::before{
+    content: "\2197";
+}
+
+.box-actions>span{
+    color: #adb5bd;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 1px;
+    cursor: pointer;
+}
+
+.box-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.box-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-value{
+    font-weight: 400 !important;
+}
+
+.info-lbl{
+    color: #adb5bd !important;
+    margin-bottom: .375rem !important;
+}
+
+.revenue-bar .c100.dark:after{
+    background: #323a46;
+}
+
+.revenue-bar .c100.dark{
+    background-color: #f8b8b8;
+}
+
+.stats-bar .c100.dark:after{
+    background: #323a46;
+}
+
+.stats-bar .c100.dark{
+    background-color: #fee5b9;
+}
+
+.c100 .slice{
+    clip: unset !important;
+}
+
+.c100.dark>span{
+    color: unset;
+}
+
+.badge{
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 10rem;
+}
+
+.sa{
+    background-color: #10c469;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.sales-analytics-bar .p-bar-wrapper{
+    background-color: rgba(16,196,105,.2);
+    height: 5px!important;
+    margin-top: 39px;
+}
+
+.sales-analytics-bar .p-bar{
+    width: 77%;
+    background-color: #10c469!important;
+    height: 5px!important;
+}
+
+.daily-sales-bar .p-bar-wrapper{
+    background-color: #5b4a61;
+    height: 5px!important;
+    margin-top: 39px;
+}
+
+.daily-sales-bar .p-bar{
+    width: 77%;
+    background-color: #fe89cb!important;
+    height: 5px!important;
+}
+
+.ds{
+    background-color: #fe89cb;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.graph-box{
+    height: 250px;
+}
+
+.inbox-box-wrapper{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.projects-box-wrapper{
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.inbox-item {
+    border-bottom: 1px solid #3b4452;
+    overflow: hidden;
+    padding: .75rem 0;
+    position: relative;
+}
+
+.inbox-item .inbox-item-img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 40px;
+}
+
+.inbox-item .inbox-item-author {
+    color: #f1f5f7;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.mb-1 {
+    margin-bottom: .375rem!important;
+}
+
+.mt-0 {
+    margin-top: 0!important;
+}
+
+h5 {
+    margin: 10px 0;
+    font-weight: 600;
+    font-family: Karla,sans-serif;
+    color: #f7f7f7;
+    font-size: .9375rem;
+    line-height: 1.1;
+}
+
+.inbox-item{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.message-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title{
+    padding: 5px 5px 5px 10px;
+    color: #f1f5f7;
+    font-weight: 600;
+    font-size: .9375rem;
+    line-height: 1.1;
+}
+
+.message-detail{
+    padding: 5px 5px 5px 10px;
+    color: #adb5bd;
+    font-size: .8125rem;
+}
+
+.time{
+    color: #adb5bd;
+    font-size: .6875rem;
+}
+
+.inbox-box-detail{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: #adb5bd;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #3b4452;
+}
+
+.table td, .table th {
+    padding: .85rem;
+    vertical-align: top;
+    border-top: 1px solid #3b4452;
+}
+
+th {
+    text-align: inherit;
+}
+
+.t-badge {
+    color: #fff;
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.badge-danger {
+    background-color: #ff5b5b;
+}
+
+.badge-success {
+    background-color: #10c469;
+}
+
+.badge-pink {
+    background-color: #ff8acc;
+}
+
+.badge-purple {
+    background-color: #5b69bc;
+}
+
+.badge-warning {
+    background-color: #f9c851;
+}
+
+.badge-primary {
+    background-color: #71b6f9;
+}
+
+.table-hover tbody tr:hover {
+    color: #adb5bd;
+    background-color: #363f4c;
+}
+
+@media only screen and (max-width: 1055px) {
+    /* styles for browsers larger than 1055px; */
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .card-box-wrapper{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    /* styles for browsers larger than 1055px; */
+
+    .card-box-wrapper{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    /* styles for browsers larger than 1055px; */
+
+    .projects-box-wrapper>.card-box>.box-detail{
+        box-sizing: border-box;
+        overflow-x: scroll;
+    }
+}
+
+@media only screen and (max-width: 285px) {
+    /* styles for browsers larger than 1055px; */
+
+    .box-detail{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* styles for browsers larger than 980px; */
+
+    .chart-box-wrapper{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .inbox-box-wrapper, .projects-box-wrapper{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

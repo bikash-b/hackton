@@ -1,0 +1,283 @@
+<div class="column primary-color">
+  <h2 class="heading">Dashboard</h2>
+  <div class="row">
+    <div class="card-box-wrapper">
+        <div class="card-box">
+          <div class="box-info">
+            <div class="box-title"> Total Revenue </div>
+            <div class="box-actions"><span></span></div>
+          </div>
+          <div class="box-detail revenue-bar">
+            <div class="c100 p12 dark small red">
+              <span>58%</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+            </div>  
+            <div>
+              <div class="info-value">256</div>
+              <div class="info-lbl">Revenue today</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="card-box-wrapper">
+        <div class="card-box sales-analytics-bar">
+            <div class="box-info">
+              <div class="box-title"> Sales Analytics </div>
+              <div class="box-actions"><span></span></div>
+            </div>
+            <div class="box-detail">
+              <div class="badge sa">
+                32% <span></span>
+              </div>  
+              <div>
+                <div class="info-value">8451</div>
+                <div class="info-lbl">Revenue today</div>
+              </div>
+            </div>
+            <div>
+              <div class="p-bar-wrapper">
+                <div class="p-bar"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="card-box-wrapper">
+        <div class="card-box">
+            <div class="box-info">
+              <div class="box-title"> Statistics </div>
+              <div class="box-actions"><span></span></div>
+            </div>
+            <div class="box-detail stats-bar">
+              <div class="c100 p12 dark small yellow">
+                <span>58%</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+              </div>  
+              <div>
+                <div class="info-value">4569</div>
+                <div class="info-lbl">Revenue today</div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="card-box-wrapper">
+        <div class="card-box daily-sales-bar">
+            <div class="box-info">
+              <div class="box-title"> Daily Sales </div>
+              <div class="box-actions"><span></span></div>
+            </div>
+            <div class="box-detail">
+              <div class="badge ds">
+                32% <span></span>
+              </div>  
+              <div>
+                <div class="info-value">158</div>
+                <div class="info-lbl">Revenue today</div>
+              </div>
+            </div>
+            <div>
+              <div class="p-bar-wrapper">
+                <div class="p-bar"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="chart-box-wrapper">
+      <div class="card-box">
+          <div class="box-info">
+            <div class="box-title"> Statistics </div>
+            <div class="box-actions"><span></span></div>
+          </div>
+          <div class="box-detail graph-box">
+              <!-- <ngx-charts-bar-vertical-2d [results]="results" [xAxis]="true" [yAxis]="true" [showGridLines]="false"></ngx-charts-bar-vertical-2d> -->
+              <canvas baseChart 
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [plugins]="barChartPlugins"
+                [legend]="barChartLegend"
+                [chartType]="barChartType">
+              </canvas>
+          </div>
+      </div>
+    </div>
+    <div class="chart-box-wrapper">
+        <div class="card-box">
+            <div class="box-info">
+              <div class="box-title"> Daily Sales </div>
+              <div class="box-actions"><span></span></div>
+            </div>
+            <div class="box-detail graph-box">
+                <canvas baseChart 
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                [options]="doughnutChartOptions">
+              </canvas>
+            </div>
+        </div>
+    </div>
+      <div class="chart-box-wrapper">
+          <div class="card-box">
+              <div class="box-info">
+                <div class="box-title"> Total Revenue </div>
+                <div class="box-actions"><span></span></div>
+              </div>
+              <div class="box-detail graph-box">
+                  <canvas baseChart
+                  [datasets]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [options]="lineChartOptions"
+                  [colors]="lineChartColors"
+                  [legend]="lineChartLegend"
+                  [chartType]="lineChartType"
+                  [plugins]="lineChartPlugins"></canvas>
+              </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="inbox-box-wrapper">
+      <div class="card-box">
+          <div class="box-info">
+              <div class="box-title"> Inbox </div>
+              <div class="box-actions"><span></span></div>
+          </div>
+          <div class="inbox-box-detail">
+              <div class="inbox-item">
+                <div class="message">
+                  <img class="profile" src="assets/images/avatar.png">
+                  <div class="message-wrapper">
+                    <span class="profile-title">Philippe</span>
+                    <span class="message-detail">Hey! there I'm available...</span>
+                  </div>
+                </div>
+                <div class="time">13:40 PM</div>
+              </div>
+              <div class="inbox-item">
+                  <div class="message">
+                    <img class="profile" src="assets/images/useravatar-1.svg">
+                    <div class="message-wrapper">
+                      <span class="profile-title">Andrew</span>
+                      <span class="message-detail">I've finished it! See you so...</span>
+                    </div>
+                  </div>
+                  <div class="time">13:40 PM</div>
+              </div>
+              <div class="inbox-item">
+                  <div class="message">
+                    <img class="profile" src="assets/images/useravatar.svg">
+                    <div class="message-wrapper">
+                      <span class="profile-title">Alexander</span>
+                      <span class="message-detail">This theme is awesome!</span>
+                    </div>
+                  </div>
+                  <div class="time">13:40 PM</div>
+              </div>
+              <div class="inbox-item">
+                    <div class="message">
+                      <img class="profile" src="assets/images/useravatar.svg">
+                      <div class="message-wrapper">
+                        <span class="profile-title">John Smith</span>
+                        <span class="message-detail">Nice to meet you</span>
+                      </div>
+                    </div>
+                    <div class="time">13:40 PM</div>
+              </div>
+              <div class="inbox-item">
+                  <div class="message">
+                    <img class="profile" src="assets/images/avatar.png">
+                    <div class="message-wrapper">
+                      <span class="profile-title">Christoper</span>
+                      <span class="message-detail">Hey! it was awesome...</span>
+                    </div>
+                  </div>
+                  <div class="time">13:40 PM</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="projects-box-wrapper">
+      <div class="card-box">
+          <div class="box-info">
+              <div class="box-title"> Latest project </div>
+              <div class="box-actions"><span></span></div>
+          </div>
+          <div class="box-detail">
+              <table class="table table-hover mb-0">
+                  <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>Project Name</th>
+                      <th>Start Date</th>
+                      <th>Due Date</th>
+                      <th>Status</th>
+                      <th>Assign</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>Adminto Admin v1</td>
+                          <td>01/01/2017</td>
+                          <td>26/04/2017</td>
+                          <td><span class="t-badge badge-danger">Released</span></td>
+                          <td>Coderthemes</td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td>Adminto Frontend v1</td>
+                          <td>01/01/2017</td>
+                          <td>26/04/2017</td>
+                          <td><span class="t-badge badge-success">Released</span></td>
+                          <td>Adminto admin</td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td>Adminto Admin v1.1</td>
+                          <td>01/05/2017</td>
+                          <td>10/05/2017</td>
+                          <td><span class="t-badge badge-pink">Pending</span></td>
+                          <td>Coderthemes</td>
+                      </tr>
+                      <tr>
+                          <td>4</td>
+                          <td>Adminto Frontend v1.1</td>
+                          <td>01/01/2017</td>
+                          <td>31/05/2017</td>
+                          <td><span class="t-badge badge-purple">Work in Progress</span>
+                          </td>
+                          <td>Adminto admin</td>
+                      </tr>
+                      <tr>
+                          <td>5</td>
+                          <td>Adminto Admin v1.3</td>
+                          <td>01/01/2017</td>
+                          <td>31/05/2017</td>
+                          <td><span class="t-badge badge-warning">Coming soon</span></td>
+                          <td>Coderthemes</td>
+                      </tr>
+
+                      <tr>
+                          <td>6</td>
+                          <td>Adminto Admin v1.3</td>
+                          <td>01/01/2017</td>
+                          <td>31/05/2017</td>
+                          <td><span class="t-badge badge-primary">Coming soon</span></td>
+                          <td>Adminto admin</td>
+                      </tr>
+
+                  </tbody>
+              </table>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
